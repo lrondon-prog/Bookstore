@@ -1,25 +1,28 @@
 package com.lrondonprog.bookstore.controller;
 
-import com.lrondonprog.bookstore.dto.MassageResponseDTO;
+import com.lrondonprog.bookstore.dto.MessageResponseDTO;
 import com.lrondonprog.bookstore.entity.Book;
-import com.lrondonprog.bookstore.repository.BookRepository;
+import com.lrondonprog.bookstore.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("a/api/v1/books")
+@RequestMapping("/api/v1/books")
 public class BookController {
 
-    private BookRepository bookRepository;
+    private BookService bookService;
 
     @Autowired
-    public BookController(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
     }
 
-    public MassageResponseDTO create(Book book){
-        Book savedBook = bookRepository.save(book);
+    @PostMapping
 
+    public MessageResponseDTO create(@RequestBody Book book){
+        return bookService.create(book);
     }
 }
