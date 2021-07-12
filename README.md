@@ -1,15 +1,14 @@
-Curso Udemy
-Comece a aprender Spring Boot agora de forma prática!
 
-Instrutor: Rodrigo Peleias
+Spring Boot API
 
-O que eu aprendi?
+
+O que foi aprendido?
 
 1 - Desenvolver uma API REST com o Spring Boot.
 
-2 - Preparar o setup de ambiente de desenvolvimento para projetos Java de forma simples e rápida.
+2 - Preparar o setup de ambiente de desenvolvimento para projetos JS de forma simples e rápida.
 
-3 - Aprendi sobre padrões de arquitetural REST
+3 - Aprendi sobre padrões de  REST
 
 
 Como usar:
