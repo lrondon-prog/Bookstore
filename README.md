@@ -17,8 +17,7 @@ git clone https://github.com/lrondon-prog/treinamento_bookstore
 No terminal:
 Execute o projeto no terminal, digite o seguinte comando: mvn spring-boot:run
 
-Inserindo dados:
-Usar aplicativo Postman Método Post(local) http://localhost:8080/api/v1/books
+
 
 
 
