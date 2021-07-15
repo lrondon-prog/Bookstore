@@ -2,7 +2,7 @@
 Spring Boot API
 
 
-O que foi aprendido?
+
 
 1 - Desenvolver uma API REST com o Spring Boot.
 
